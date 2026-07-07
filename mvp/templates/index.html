@@ -1,1 +1,134 @@
 
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MVP - Generador SVG NLP</title>
+    <!-- Tailwind CSS para diseño rápido y moderno -->
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col justify-between">
+
+    <!-- Navegación -->
+    <nav class="bg-gray-800 border-b border-gray-700 p-4 shadow-md">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-xl font-bold tracking-wider text-indigo-400">🎨 SVG-NLP MVP</h1>
+            <span class="text-xs bg-indigo-900 text-indigo-300 px-2.5 py-1 rounded-full font-semibold">Semana 1: Frontend & Mocks</span>
+        </div>
+    </nav>
+
+    <!-- Contenido Principal -->
+    <main class="container mx-auto p-6 flex-grow grid grid-cols-1 md:grid-cols-2 gap-8 items-start my-auto">
+        
+        <!-- Columna Izquierda: Formulario e Inputs -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
+            <h2 class="text-lg font-semibold mb-4 text-gray-200">Ingresa tu instrucción (Prompt)</h2>
+            
+            <form id="generatorForm" class="space-y-4">
+                <div>
+                    <label for="prompt" class="block text-sm font-medium text-gray-400 mb-2">¿Qué deseas diseñar?</label>
+                    <textarea id="prompt" rows="4" 
+                        class="w-full p-3 bg-gray-950 border border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white placeholder-gray-500"
+                        placeholder="Ejemplo: Una camiseta con un dragón estilo Samurai..."></textarea>
+                </div>
+                
+                <!-- Botón de Envío -->
+                <button type="submit" id="btnSubmit"
+                    class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-lg transition duration-200 shadow-md cursor-pointer">
+                    Procesar y Generar SVG
+                </button>
+            </form>
+
+            <!-- Alertas de Error / Éxito -->
+            <div id="errorAlert" class="hidden mt-4 p-3 bg-red-900/50 border border-red-700 text-red-200 rounded-lg text-sm"></div>
+
+            <!-- Visualización de Atributos Extraídos (Mock) -->
+            <div id="attributesContainer" class="hidden mt-6 p-4 bg-gray-950 border border-gray-700 rounded-lg">
+                <h3 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-2">Atributos Extraídos (Mock NLP)</h3>
+                <ul id="attributesList" class="space-y-1 text-sm text-gray-300"></ul>
+            </div>
+        </div>
+
+        <!-- Columna Derecha: Visualizador del SVG resultante -->
+        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col items-center justify-between h-full min-h-[400px]">
+            <h2 class="text-lg font-semibold mb-4 text-gray-200 self-start">Visualización del SVG</h2>
+            
+            <!-- Contenedor del renderizado -->
+            <div id="svgContainer" class="w-full flex-grow flex items-center justify-center bg-gray-950 rounded-lg border border-dashed border-gray-700 p-4 min-h-[250px]">
+                <p id="placeholderText" class="text-gray-500 text-sm text-center">Introduce un prompt para previsualizar el diseño gráfico.</p>
+            </div>
+
+            <!-- Botón de Descarga -->
+            <div class="w-full mt-4">
+                <a id="btnDownload" href="#" 
+                    class="hidden w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 px-4 rounded-lg transition duration-200 shadow-md">
+                    📥 Descargar Archivo .svg
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-center py-4 text-xs text-gray-500 border-t border-gray-800">
+        Emmanuel &copy; 2026 - Desarrollo de MVP Desacoplado
+    </footer>
+
+    <!-- Lógica JavaScript (Interacción Asíncrona con la API) -->
+    <script>
+        document.getElementById('generatorForm').addEventListener('submit', async (e) => {
+            e.preventDefault();
+            
+            const promptInput = document.getElementById('prompt').value;
+            const btnSubmit = document.getElementById('btnSubmit');
+            const errorAlert = document.getElementById('errorAlert');
+            const attributesContainer = document.getElementById('attributesContainer');
+            const attributesList = document.getElementById('attributesList');
+            const svgContainer = document.getElementById('svgContainer');
+            const placeholderText = document.getElementById('placeholderText');
+            const btnDownload = document.getElementById('btnDownload');
+
+            // Resetear UI
+            errorAlert.classList.add('hidden');
+            btnSubmit.disabled = true;
+            btnSubmit.innerText = 'Procesando...';
+
+            try {
+                const response = await fetch('/api/generate', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ prompt: promptInput })
+                });
+
+                const result = await response.get_json();
+
+                if (!response.ok) {
+                    throw new Error(result.error || 'Error al procesar la solicitud');
+                }
+
+                // 1. Mostrar Atributos Simulados
+                attributesList.innerHTML = `
+                    <li><strong>Figura:</strong> ${result.atributos.figura}</li>
+                    <li><strong>Texto:</strong> ${result.atributos.texto}</li>
+                `;
+                attributesContainer.classList.remove('hidden');
+
+                // 2. Renderizar SVG en Pantalla (Inyectando la imagen estática simulada)
+                svgContainer.innerHTML = `<img src="/static/mocks/${result.archivo}?t=${new Date().getTime()}" alt="SVG Generado" class="max-h-[250px] object-contain">`;
+
+                // 3. Activar Botón de Descarga
+                btnDownload.href = `/download/${result.archivo}`;
+                btnDownload.classList.remove('hidden');
+                btnDownload.classList.add('block');
+
+            } catch (err) {
+                errorAlert.innerText = err.message;
+                errorAlert.classList.remove('hidden');
+            } finally {
+                btnSubmit.disabled = false;
+                btnSubmit.innerText = 'Procesar y Generar SVG';
+            }
+        });
+    </script>
+</body>
+</html>
