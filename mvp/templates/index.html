@@ -73,7 +73,7 @@
         Emmanuel &copy; 2026 - Desarrollo de MVP Desacoplado
     </footer>
 
-    <!-- Lógica JavaScript (Interacción Asíncrona con la API) -->
+    <!-- Lógica JavaScript Corregida -->
     <script>
         document.getElementById('generatorForm').addEventListener('submit', async (e) => {
             e.preventDefault();
@@ -84,10 +84,9 @@
             const attributesContainer = document.getElementById('attributesContainer');
             const attributesList = document.getElementById('attributesList');
             const svgContainer = document.getElementById('svgContainer');
-            const placeholderText = document.getElementById('placeholderText');
             const btnDownload = document.getElementById('btnDownload');
 
-            // Resetear UI
+            // Limpiar estados previos de la interfaz
             errorAlert.classList.add('hidden');
             btnSubmit.disabled = true;
             btnSubmit.innerText = 'Procesando...';
@@ -99,29 +98,30 @@
                     body: JSON.stringify({ prompt: promptInput })
                 });
 
-                // Cambiado get_json() por json() para solventar el error del navegador
+                // Única conversión limpia usando estándar JavaScript .json()
                 const result = await response.json();
 
                 if (!response.ok) {
                     throw new Error(result.error || 'Error al procesar la solicitud');
                 }
 
-                // 1. Mostrar Atributos Simulados
+                // 1. Mostrar Atributos Extraídos (Mock)
                 attributesList.innerHTML = `
                     <li><strong>Figura:</strong> ${result.atributos.figura}</li>
                     <li><strong>Texto:</strong> ${result.atributos.texto}</li>
                 `;
                 attributesContainer.classList.remove('hidden');
 
-                // 2. Renderizar SVG en Pantalla (Inyectando la imagen estática simulada)
+                // 2. Renderizar SVG en Pantalla evitando el uso de la caché vieja del navegador
                 svgContainer.innerHTML = `<img src="/static/mocks/${result.archivo}?t=${new Date().getTime()}" alt="SVG Generado" class="max-h-[250px] object-contain">`;
 
-                // 3. Activar Botón de Descarga
+                // 3. Activar el Botón de Descarga
                 btnDownload.href = `/download/${result.archivo}`;
                 btnDownload.classList.remove('hidden');
                 btnDownload.classList.add('block');
 
             } catch (err) {
+                // Captura de errores limpia
                 errorAlert.innerText = err.message;
                 errorAlert.classList.remove('hidden');
             } finally {
