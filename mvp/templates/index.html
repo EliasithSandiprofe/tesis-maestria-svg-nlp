@@ -99,7 +99,8 @@
                     body: JSON.stringify({ prompt: promptInput })
                 });
 
-                const result = await response.get_json(); 
+                // Cambiado get_json() por json() para solventar el error del navegador
+                const result = await response.json();
 
                 if (!response.ok) {
                     throw new Error(result.error || 'Error al procesar la solicitud');
@@ -131,4 +132,3 @@
     </script>
 </body>
 </html>
-
