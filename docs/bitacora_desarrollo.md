@@ -222,3 +222,63 @@ La evidencia muestra la ejecución exitosa del módulo NLP y la extracción de i
 **Sesión 04**
 
 Diseño e implementación del dataset sintético de 2,000 prompts para el entrenamiento supervisado del modelo DistilBERT, incluyendo la definición de atributos, estructura del conjunto de datos y estrategia de preparación para el entrenamiento.
+
+
+## Sesión 04 – Diseño y generación del dataset sintético
+
+**Fecha:** 07/07/2026  
+**Objetivo:** Diseñar y construir el dataset sintético de prompts para el entrenamiento del modelo DistilBERT.
+
+### Actividades realizadas
+
+Durante esta sesión se diseñó y construyó el dataset sintético del proyecto, alineado con la propuesta de innovación definida en la Entrega 2. El dataset fue creado para entrenar un modelo NLP basado en DistilBERT, utilizando prompts relacionados con diseños SVG de camisetas personalizadas.
+
+Se definieron los atributos principales del dataset:
+
+- Color
+- Estilo
+- Elemento gráfico principal
+- Posición del diseño
+
+También se definieron las clases correspondientes a cada atributo, respetando el alcance del MVP planteado en la Entrega 2.
+
+Posteriormente, se implementó un pipeline reproducible para generar automáticamente el dataset sintético. Este pipeline incluye carga de configuración, generación de combinaciones, creación de prompts, validación del dataset y exportación de archivos.
+
+### Archivos generados
+
+- `dataset/raw/dataset_prompts_svg_2000.csv`
+- `dataset/processed/dataset_training.csv`
+- `dataset/reports/dataset_report.md`
+
+### Resultado obtenido
+
+El dataset final contiene:
+
+- 2,000 registros.
+- 6 columnas en el archivo completo.
+- 4 atributos de clasificación.
+- 6 clases de color.
+- 5 clases de estilo.
+- 10 clases de elemento gráfico.
+- 4 clases de posición.
+
+La validación automática confirmó:
+
+- 2,000 registros generados.
+- 2,000 identificadores únicos.
+- 0 errores de validación.
+- 0 valores nulos.
+- Balance adecuado entre clases.
+- 1,920 prompts únicos.
+
+### Evidencia generada
+
+Se generó la evidencia:
+
+`EV-004_dataset_sintetico_generado.png`
+
+Esta evidencia muestra la ejecución exitosa del pipeline de generación del dataset sintético.
+
+### Conclusión de la sesión
+
+La Sesión 04 se considera completada exitosamente. El proyecto cuenta ahora con un dataset sintético reproducible, validado y listo para ser utilizado en la siguiente etapa del Sprint 1: la preparación de datos para el entrenamiento del modelo DistilBERT.
