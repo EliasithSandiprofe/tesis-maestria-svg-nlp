@@ -99,7 +99,7 @@
                     body: JSON.stringify({ prompt: promptInput })
                 });
 
-                const result = await response.json(); 
+                const result = await response.get_json(); 
 
                 if (!response.ok) {
                     throw new Error(result.error || 'Error al procesar la solicitud');
