@@ -1,0 +1,19 @@
+# templates.yaml
+# Plantillas de prompts en español para generación sintética.
+# Variables disponibles: {color}, {estilo}, {elemento}, {posicion}
+
+templates:
+  - "Camiseta de color {color}, diseño de {elemento}, estilo {estilo}, zona {posicion}"
+  - "Quiero una camiseta con diseño de {elemento} en estilo {estilo}, color {color}, posición {posicion}"
+  - "Diseñar camiseta: elemento gráfico {elemento}, color {color}, estilo {estilo}, ubicación {posicion}"
+  - "Camiseta con estampado de {elemento}, color principal {color}, estilo visual {estilo}, zona {posicion}"
+  - "Necesito una camiseta con gráfico de {elemento} en zona {posicion}, color {color}, estilo {estilo}"
+  - "Generar camiseta de estilo {estilo}, color {color}, imagen de {elemento} en zona {posicion}"
+  - "Diseño para camiseta: {elemento} en posición {posicion}, color {color}, estilo visual {estilo}"
+  - "Camiseta color {color}, estilo {estilo}, con estampado de {elemento} en zona {posicion}"
+  - "Quiero estampado de {elemento} en zona {posicion}, color {color}, estilo {estilo}"
+  - "Camiseta con imagen de {elemento}, color {color}, estilo {estilo}, posición {posicion}"
+  - "Diseño de camiseta: gráfico de {elemento}, color {color}, estilo {estilo}, posición {posicion}"
+  - "Crear camiseta de estilo {estilo} con motivo de {elemento} en color {color}, zona {posicion}"
+  - "Camiseta de color {color} con motivo {estilo} de {elemento} en la zona {posicion}"
+  - "Quiero diseño de {elemento} en camiseta color {color}, estilo {estilo}, ubicado en {posicion}"
