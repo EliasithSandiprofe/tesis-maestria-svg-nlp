@@ -31,3 +31,8 @@ python --version
 python -m pip install --upgrade pip setuptools wheel
 pip install numpy pandas scikit-learn matplotlib streamlit
 python -c "import numpy, pandas, sklearn, streamlit; print('Dependencias base instaladas correctamente')"
+
+
+## Evidencia
+
+![Configuración del entorno](capturas/EV-001-configuracion-entorno-dependencias-base.png)
