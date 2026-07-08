@@ -1,18 +1,18 @@
 # Classification Report — `color`
 
-> Generado: 2026-07-08 16:45:34
+> Generado: 2026-07-08 22:47:37
 
 ```
               precision    recall  f1-score   support
 
-        azul       0.00      0.00      0.00         3
-      blanco       0.00      0.00      0.00         5
-        gris       0.16      1.00      0.27         5
-       negro       0.00      0.00      0.00         6
-        rojo       0.00      0.00      0.00         9
-       verde       0.00      0.00      0.00         4
+        azul       1.00      1.00      1.00        54
+      blanco       1.00      1.00      1.00        48
+        gris       1.00      1.00      1.00        44
+       negro       1.00      1.00      1.00        45
+        rojo       1.00      1.00      1.00        47
+       verde       1.00      1.00      1.00        50
 
-    accuracy                           0.16        32
-   macro avg       0.03      0.17      0.05        32
-weighted avg       0.02      0.16      0.04        32
+    accuracy                           1.00       288
+   macro avg       1.00      1.00      1.00       288
+weighted avg       1.00      1.00      1.00       288
 ```

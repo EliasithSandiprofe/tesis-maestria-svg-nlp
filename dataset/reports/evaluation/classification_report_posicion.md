@@ -1,16 +1,16 @@
 # Classification Report — `posicion`
 
-> Generado: 2026-07-08 16:45:35
+> Generado: 2026-07-08 22:47:38
 
 ```
               precision    recall  f1-score   support
 
-    centrado       0.47      1.00      0.64        15
-     espalda       0.00      0.00      0.00         9
-     esquina       0.00      0.00      0.00         2
-       pecho       0.00      0.00      0.00         6
+    centrado       1.00      1.00      1.00        85
+     espalda       1.00      1.00      1.00        66
+     esquina       1.00      1.00      1.00        63
+       pecho       1.00      1.00      1.00        74
 
-    accuracy                           0.47        32
-   macro avg       0.12      0.25      0.16        32
-weighted avg       0.22      0.47      0.30        32
+    accuracy                           1.00       288
+   macro avg       1.00      1.00      1.00       288
+weighted avg       1.00      1.00      1.00       288
 ```

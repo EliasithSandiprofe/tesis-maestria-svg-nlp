@@ -1,22 +1,22 @@
 # Classification Report — `elemento`
 
-> Generado: 2026-07-08 16:45:35
+> Generado: 2026-07-08 22:47:38
 
 ```
               precision    recall  f1-score   support
 
-   automóvil       0.00      0.00      0.00         1
-    calavera       0.00      0.00      0.00         3
-      dragón       0.00      0.00      0.00         1
-    guitarra       0.17      0.43      0.24         7
-        lobo       0.00      0.00      0.00         3
-     montaña       0.00      0.00      0.00         4
-         sol       0.00      0.00      0.00         2
-       texto       0.00      0.00      0.00         4
-      águila       0.00      0.00      0.00         3
-       árbol       0.00      0.00      0.00         4
+   automóvil       1.00      1.00      1.00        29
+    calavera       1.00      1.00      1.00        29
+      dragón       1.00      1.00      1.00        29
+    guitarra       1.00      1.00      1.00        30
+        lobo       1.00      1.00      1.00        26
+     montaña       1.00      1.00      1.00        29
+         sol       1.00      1.00      1.00        29
+       texto       1.00      1.00      1.00        29
+      águila       1.00      1.00      1.00        30
+       árbol       1.00      1.00      1.00        28
 
-    accuracy                           0.09        32
-   macro avg       0.02      0.04      0.02        32
-weighted avg       0.04      0.09      0.05        32
+    accuracy                           1.00       288
+   macro avg       1.00      1.00      1.00       288
+weighted avg       1.00      1.00      1.00       288
 ```

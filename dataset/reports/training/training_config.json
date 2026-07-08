@@ -1,7 +1,7 @@
 {
-  "generated": "2026-07-08 16:19:10",
-  "batch_size": 4,
-  "epochs": 1,
+  "generated": "2026-07-08 22:31:51",
+  "batch_size": 16,
+  "epochs": 5,
   "learning_rate": 2e-05,
   "weight_decay": 0.01,
   "max_grad_norm": 1.0,
@@ -9,13 +9,13 @@
   "random_seed": 42,
   "warmup_ratio": 0.1,
   "max_length": 128,
-  "device": "cpu",
-  "train_csv": "dataset\\processed\\dataset_train.csv",
-  "val_csv": "dataset\\processed\\dataset_validation.csv",
-  "tokenizer_dir": "modelos\\tokenizer",
-  "encoders_dir": "modelos\\label_encoders",
-  "checkpoint_dir": "modelos\\checkpoints",
-  "reports_dir": "dataset\\reports\\training",
-  "best_checkpoint": "modelos\\checkpoints\\best_model.pt",
-  "last_checkpoint": "modelos\\checkpoints\\last_model.pt"
+  "device": "cuda",
+  "train_csv": "/content/tesis-maestria-svg-nlp/dataset/processed/dataset_train.csv",
+  "val_csv": "/content/tesis-maestria-svg-nlp/dataset/processed/dataset_validation.csv",
+  "tokenizer_dir": "/content/tesis-maestria-svg-nlp/modelos/tokenizer",
+  "encoders_dir": "/content/tesis-maestria-svg-nlp/modelos/label_encoders",
+  "checkpoint_dir": "/content/tesis-maestria-svg-nlp/modelos/checkpoints",
+  "reports_dir": "/content/tesis-maestria-svg-nlp/dataset/reports/training",
+  "best_checkpoint": "/content/tesis-maestria-svg-nlp/modelos/checkpoints/best_model.pt",
+  "last_checkpoint": "/content/tesis-maestria-svg-nlp/modelos/checkpoints/last_model.pt"
 }

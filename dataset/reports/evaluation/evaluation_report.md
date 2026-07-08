@@ -1,7 +1,7 @@
 # Reporte de Evaluación Final — Fase E
 
 > **Proyecto:** Tesis de Maestría — Interpretación de Prompts NLP para generación SVG  
-> **Generado:** 2026-07-08 16:45:36  
+> **Generado:** 2026-07-08 22:47:38  
 > **Fase:** E — Evaluación final del modelo  
 
 ---
@@ -10,12 +10,12 @@
 
 | Parámetro | Valor |
 |---|---|
-| Dispositivo | `cpu` |
+| Dispositivo | `cuda` |
 | Checkpoint evaluado | `best_model.pt` |
-| Época del checkpoint | 1 |
-| Val loss (entrenamiento) | 7.0727 |
+| Época del checkpoint | 5 |
+| Val loss (entrenamiento) | 0.2844 |
 | Dataset de prueba | `dataset_test.csv` |
-| Muestras test | 32 |
+| Muestras test | 288 |
 
 ---
 
@@ -23,8 +23,8 @@
 
 | Métrica | Valor |
 |---|---|
-| **Mean Accuracy** | **24.22%** |
-| **Mean F1 Macro** | **8.99%** |
+| **Mean Accuracy** | **100.00%** |
+| **Mean F1 Macro** | **100.00%** |
 
 ---
 
@@ -34,10 +34,10 @@
 
 | Métrica | Valor |
 |---|---|
-| Accuracy | 15.62% |
-| Precision Macro | 2.60% |
-| Recall Macro | 16.67% |
-| F1 Macro | 4.50% |
+| Accuracy | 100.00% |
+| Precision Macro | 100.00% |
+| Recall Macro | 100.00% |
+| F1 Macro | 100.00% |
 
 **Clases:** `azul`, `blanco`, `gris`, `negro`, `rojo`, `verde`
 
@@ -47,10 +47,10 @@
 
 | Métrica | Valor |
 |---|---|
-| Accuracy | 25.00% |
-| Precision Macro | 24.52% |
-| Recall Macro | 23.33% |
-| F1 Macro | 13.08% |
+| Accuracy | 100.00% |
+| Precision Macro | 100.00% |
+| Recall Macro | 100.00% |
+| F1 Macro | 100.00% |
 
 **Clases:** `deportivo`, `minimalista`, `retro`, `urbano`, `vintage`
 
@@ -60,10 +60,10 @@
 
 | Métrica | Valor |
 |---|---|
-| Accuracy | 9.38% |
-| Precision Macro | 1.67% |
-| Recall Macro | 4.29% |
-| F1 Macro | 2.40% |
+| Accuracy | 100.00% |
+| Precision Macro | 100.00% |
+| Recall Macro | 100.00% |
+| F1 Macro | 100.00% |
 
 **Clases:** `automóvil`, `calavera`, `dragón`, `guitarra`, `lobo`, `montaña`, `sol`, `texto`, `águila`, `árbol`
 
@@ -73,10 +73,10 @@
 
 | Métrica | Valor |
 |---|---|
-| Accuracy | 46.88% |
-| Precision Macro | 11.72% |
-| Recall Macro | 25.00% |
-| F1 Macro | 15.96% |
+| Accuracy | 100.00% |
+| Precision Macro | 100.00% |
+| Recall Macro | 100.00% |
+| F1 Macro | 100.00% |
 
 **Clases:** `centrado`, `espalda`, `esquina`, `pecho`
 
@@ -86,9 +86,9 @@
 
 ## 4. Interpretación de Resultados
 
-El modelo MultiTaskDistilBERT alcanzó un desempeño **bajo, lo que sugiere que el modelo requiere mayor entrenamiento o ajuste de hiperparámetros** sobre el conjunto de prueba, con una accuracy media de **24.2%** y un F1 macro medio de **9.0%** considerando las cuatro tareas de clasificación simultáneas.
+El modelo MultiTaskDistilBERT alcanzó un desempeño **excelente** sobre el conjunto de prueba, con una accuracy media de **100.0%** y un F1 macro medio de **100.0%** considerando las cuatro tareas de clasificación simultáneas.
 
-La tarea con **mejor desempeño** fue `posicion` (accuracy = 46.9%), lo que indica que el modelo captura adecuadamente los patrones lingüísticos asociados a este atributo de diseño SVG. La tarea con **menor desempeño** fue `elemento` (accuracy = 9.4%), lo que puede atribuirse a una mayor ambigüedad léxica en los prompts o a la mayor cardinalidad de clases en esta dimensión.
+La tarea con **mejor desempeño** fue `color` (accuracy = 100.0%), lo que indica que el modelo captura adecuadamente los patrones lingüísticos asociados a este atributo de diseño SVG. La tarea con **menor desempeño** fue `color` (accuracy = 100.0%), lo que puede atribuirse a una mayor ambigüedad léxica en los prompts o a la mayor cardinalidad de clases en esta dimensión.
 
 Las matrices de confusión por tarea permiten identificar las clases con mayor tasa de error e informar decisiones de mejora en fases futuras del proyecto.
 
