@@ -1,0 +1,289 @@
+prompt,color,estilo,elemento,posicion,color_enc,estilo_enc,elemento_enc,posicion_enc
+"Necesito una camiseta con gráfico de águila en zona espalda, color gris, estilo retro",gris,retro,águila,espalda,2,2,8,1
+"Crear camiseta de estilo deportivo con motivo de guitarra en color blanco, zona pecho",blanco,deportivo,guitarra,pecho,1,0,3,3
+"Diseño para camiseta: sol en posición esquina, color blanco, estilo visual minimalista",blanco,minimalista,sol,esquina,1,1,6,2
+"Crear camiseta de estilo urbano con motivo de montaña en color rojo, zona pecho",rojo,urbano,montaña,pecho,4,3,5,3
+"Camiseta color verde, estilo vintage, con estampado de árbol en zona espalda",verde,vintage,árbol,espalda,5,4,9,1
+"Generar camiseta de estilo vintage, color negro, imagen de dragón en zona centrado",negro,vintage,dragón,centrado,3,4,2,0
+"Camiseta con imagen de águila, color negro, estilo retro, posición espalda",negro,retro,águila,espalda,3,2,8,1
+"Diseño de camiseta: gráfico de árbol, color negro, estilo retro, posición centrado",negro,retro,árbol,centrado,3,2,9,0
+"Generar camiseta de estilo vintage, color negro, imagen de lobo en zona pecho",negro,vintage,lobo,pecho,3,4,4,3
+"Necesito una camiseta con gráfico de águila en zona centrado, color gris, estilo minimalista",gris,minimalista,águila,centrado,2,1,8,0
+"Quiero diseño de automóvil en camiseta color rojo, estilo retro, ubicado en espalda",rojo,retro,automóvil,espalda,4,2,0,1
+"Camiseta color verde, estilo minimalista, con estampado de guitarra en zona centrado",verde,minimalista,guitarra,centrado,5,1,3,0
+"Generar camiseta de estilo vintage, color azul, imagen de guitarra en zona centrado",azul,vintage,guitarra,centrado,0,4,3,0
+"Diseñar camiseta: elemento gráfico guitarra, color azul, estilo vintage, ubicación espalda",azul,vintage,guitarra,espalda,0,4,3,1
+"Diseño de camiseta: gráfico de lobo, color rojo, estilo urbano, posición pecho",rojo,urbano,lobo,pecho,4,3,4,3
+"Camiseta de color negro, diseño de texto, estilo retro, zona centrado",negro,retro,texto,centrado,3,2,7,0
+"Generar camiseta de estilo deportivo, color rojo, imagen de sol en zona centrado",rojo,deportivo,sol,centrado,4,0,6,0
+"Necesito una camiseta con gráfico de calavera en zona centrado, color rojo, estilo minimalista",rojo,minimalista,calavera,centrado,4,1,1,0
+"Necesito una camiseta con gráfico de árbol en zona pecho, color rojo, estilo urbano",rojo,urbano,árbol,pecho,4,3,9,3
+"Diseño para camiseta: árbol en posición centrado, color gris, estilo visual deportivo",gris,deportivo,árbol,centrado,2,0,9,0
+Camiseta de color rojo con motivo retro de guitarra en la zona pecho,rojo,retro,guitarra,pecho,4,2,3,3
+"Camiseta de color blanco, diseño de guitarra, estilo retro, zona esquina",blanco,retro,guitarra,esquina,1,2,3,2
+"Diseñar camiseta: elemento gráfico texto, color rojo, estilo deportivo, ubicación espalda",rojo,deportivo,texto,espalda,4,0,7,1
+"Necesito una camiseta con gráfico de calavera en zona centrado, color blanco, estilo deportivo",blanco,deportivo,calavera,centrado,1,0,1,0
+"Camiseta color verde, estilo minimalista, con estampado de texto en zona centrado",verde,minimalista,texto,centrado,5,1,7,0
+"Crear camiseta de estilo minimalista con motivo de texto en color gris, zona espalda",gris,minimalista,texto,espalda,2,1,7,1
+"Diseñar camiseta: elemento gráfico montaña, color azul, estilo deportivo, ubicación centrado",azul,deportivo,montaña,centrado,0,0,5,0
+"Camiseta con imagen de lobo, color blanco, estilo vintage, posición centrado",blanco,vintage,lobo,centrado,1,4,4,0
+"Diseño para camiseta: guitarra en posición centrado, color rojo, estilo visual vintage",rojo,vintage,guitarra,centrado,4,4,3,0
+"Quiero una camiseta con diseño de montaña en estilo retro, color negro, posición espalda",negro,retro,montaña,espalda,3,2,5,1
+"Crear camiseta de estilo minimalista con motivo de calavera en color gris, zona centrado",gris,minimalista,calavera,centrado,2,1,1,0
+"Necesito una camiseta con gráfico de montaña en zona espalda, color verde, estilo minimalista",verde,minimalista,montaña,espalda,5,1,5,1
+"Quiero una camiseta con diseño de montaña en estilo minimalista, color azul, posición pecho",azul,minimalista,montaña,pecho,0,1,5,3
+"Camiseta color verde, estilo urbano, con estampado de calavera en zona pecho",verde,urbano,calavera,pecho,5,3,1,3
+"Quiero una camiseta con diseño de calavera en estilo vintage, color negro, posición esquina",negro,vintage,calavera,esquina,3,4,1,2
+"Camiseta con estampado de dragón, color principal blanco, estilo visual vintage, zona esquina",blanco,vintage,dragón,esquina,1,4,2,2
+"Camiseta de color rojo, diseño de montaña, estilo minimalista, zona espalda",rojo,minimalista,montaña,espalda,4,1,5,1
+Camiseta de color verde con motivo minimalista de automóvil en la zona centrado,verde,minimalista,automóvil,centrado,5,1,0,0
+"Diseño para camiseta: guitarra en posición esquina, color verde, estilo visual urbano",verde,urbano,guitarra,esquina,5,3,3,2
+"Necesito una camiseta con gráfico de dragón en zona pecho, color rojo, estilo deportivo",rojo,deportivo,dragón,pecho,4,0,2,3
+"Diseño para camiseta: águila en posición pecho, color verde, estilo visual minimalista",verde,minimalista,águila,pecho,5,1,8,3
+"Crear camiseta de estilo urbano con motivo de árbol en color verde, zona pecho",verde,urbano,árbol,pecho,5,3,9,3
+"Camiseta con imagen de guitarra, color azul, estilo deportivo, posición pecho",azul,deportivo,guitarra,pecho,0,0,3,3
+"Camiseta de color azul, diseño de calavera, estilo urbano, zona esquina",azul,urbano,calavera,esquina,0,3,1,2
+"Camiseta color azul, estilo urbano, con estampado de lobo en zona centrado",azul,urbano,lobo,centrado,0,3,4,0
+"Quiero estampado de sol en zona centrado, color verde, estilo minimalista",verde,minimalista,sol,centrado,5,1,6,0
+"Camiseta con estampado de sol, color principal gris, estilo visual vintage, zona espalda",gris,vintage,sol,espalda,2,4,6,1
+"Camiseta de color blanco, diseño de automóvil, estilo deportivo, zona esquina",blanco,deportivo,automóvil,esquina,1,0,0,2
+"Camiseta con estampado de guitarra, color principal azul, estilo visual urbano, zona pecho",azul,urbano,guitarra,pecho,0,3,3,3
+"Crear camiseta de estilo vintage con motivo de guitarra en color azul, zona centrado",azul,vintage,guitarra,centrado,0,4,3,0
+"Necesito una camiseta con gráfico de texto en zona centrado, color verde, estilo retro",verde,retro,texto,centrado,5,2,7,0
+"Camiseta de color verde, diseño de automóvil, estilo vintage, zona espalda",verde,vintage,automóvil,espalda,5,4,0,1
+"Necesito una camiseta con gráfico de águila en zona esquina, color negro, estilo urbano",negro,urbano,águila,esquina,3,3,8,2
+"Generar camiseta de estilo vintage, color gris, imagen de texto en zona espalda",gris,vintage,texto,espalda,2,4,7,1
+"Camiseta color verde, estilo vintage, con estampado de calavera en zona esquina",verde,vintage,calavera,esquina,5,4,1,2
+"Crear camiseta de estilo urbano con motivo de dragón en color azul, zona pecho",azul,urbano,dragón,pecho,0,3,2,3
+"Necesito una camiseta con gráfico de texto en zona pecho, color gris, estilo minimalista",gris,minimalista,texto,pecho,2,1,7,3
+"Generar camiseta de estilo retro, color blanco, imagen de dragón en zona espalda",blanco,retro,dragón,espalda,1,2,2,1
+"Quiero diseño de árbol en camiseta color gris, estilo retro, ubicado en pecho",gris,retro,árbol,pecho,2,2,9,3
+"Quiero estampado de lobo en zona pecho, color verde, estilo retro",verde,retro,lobo,pecho,5,2,4,3
+"Diseñar camiseta: elemento gráfico texto, color rojo, estilo deportivo, ubicación centrado",rojo,deportivo,texto,centrado,4,0,7,0
+"Diseñar camiseta: elemento gráfico montaña, color verde, estilo deportivo, ubicación esquina",verde,deportivo,montaña,esquina,5,0,5,2
+"Generar camiseta de estilo vintage, color negro, imagen de lobo en zona espalda",negro,vintage,lobo,espalda,3,4,4,1
+"Diseño para camiseta: montaña en posición pecho, color azul, estilo visual retro",azul,retro,montaña,pecho,0,2,5,3
+"Camiseta color rojo, estilo urbano, con estampado de dragón en zona espalda",rojo,urbano,dragón,espalda,4,3,2,1
+"Camiseta con imagen de calavera, color azul, estilo urbano, posición centrado",azul,urbano,calavera,centrado,0,3,1,0
+Camiseta de color azul con motivo minimalista de montaña en la zona esquina,azul,minimalista,montaña,esquina,0,1,5,2
+"Quiero estampado de lobo en zona espalda, color azul, estilo retro",azul,retro,lobo,espalda,0,2,4,1
+"Necesito una camiseta con gráfico de texto en zona centrado, color azul, estilo urbano",azul,urbano,texto,centrado,0,3,7,0
+"Generar camiseta de estilo urbano, color negro, imagen de sol en zona esquina",negro,urbano,sol,esquina,3,3,6,2
+"Camiseta color blanco, estilo deportivo, con estampado de águila en zona espalda",blanco,deportivo,águila,espalda,1,0,8,1
+"Camiseta con imagen de automóvil, color blanco, estilo retro, posición pecho",blanco,retro,automóvil,pecho,1,2,0,3
+"Necesito una camiseta con gráfico de águila en zona pecho, color gris, estilo deportivo",gris,deportivo,águila,pecho,2,0,8,3
+"Quiero diseño de árbol en camiseta color rojo, estilo urbano, ubicado en espalda",rojo,urbano,árbol,espalda,4,3,9,1
+Camiseta de color blanco con motivo retro de calavera en la zona pecho,blanco,retro,calavera,pecho,1,2,1,3
+"Generar camiseta de estilo retro, color rojo, imagen de guitarra en zona centrado",rojo,retro,guitarra,centrado,4,2,3,0
+"Generar camiseta de estilo urbano, color negro, imagen de texto en zona esquina",negro,urbano,texto,esquina,3,3,7,2
+"Quiero estampado de guitarra en zona espalda, color blanco, estilo vintage",blanco,vintage,guitarra,espalda,1,4,3,1
+"Crear camiseta de estilo retro con motivo de texto en color negro, zona esquina",negro,retro,texto,esquina,3,2,7,2
+"Necesito una camiseta con gráfico de águila en zona pecho, color negro, estilo vintage",negro,vintage,águila,pecho,3,4,8,3
+"Camiseta color blanco, estilo minimalista, con estampado de sol en zona esquina",blanco,minimalista,sol,esquina,1,1,6,2
+"Quiero estampado de montaña en zona centrado, color blanco, estilo deportivo",blanco,deportivo,montaña,centrado,1,0,5,0
+"Quiero estampado de montaña en zona centrado, color azul, estilo vintage",azul,vintage,montaña,centrado,0,4,5,0
+"Camiseta con estampado de montaña, color principal gris, estilo visual retro, zona centrado",gris,retro,montaña,centrado,2,2,5,0
+"Quiero diseño de sol en camiseta color blanco, estilo retro, ubicado en espalda",blanco,retro,sol,espalda,1,2,6,1
+"Crear camiseta de estilo minimalista con motivo de sol en color rojo, zona esquina",rojo,minimalista,sol,esquina,4,1,6,2
+"Diseño de camiseta: gráfico de lobo, color azul, estilo vintage, posición pecho",azul,vintage,lobo,pecho,0,4,4,3
+"Camiseta con imagen de lobo, color verde, estilo deportivo, posición esquina",verde,deportivo,lobo,esquina,5,0,4,2
+"Camiseta con imagen de dragón, color blanco, estilo vintage, posición pecho",blanco,vintage,dragón,pecho,1,4,2,3
+"Quiero una camiseta con diseño de guitarra en estilo vintage, color rojo, posición centrado",rojo,vintage,guitarra,centrado,4,4,3,0
+"Diseñar camiseta: elemento gráfico calavera, color azul, estilo minimalista, ubicación espalda",azul,minimalista,calavera,espalda,0,1,1,1
+"Quiero una camiseta con diseño de guitarra en estilo urbano, color gris, posición esquina",gris,urbano,guitarra,esquina,2,3,3,2
+Camiseta de color azul con motivo urbano de águila en la zona espalda,azul,urbano,águila,espalda,0,3,8,1
+"Crear camiseta de estilo vintage con motivo de automóvil en color blanco, zona pecho",blanco,vintage,automóvil,pecho,1,4,0,3
+"Diseñar camiseta: elemento gráfico dragón, color gris, estilo deportivo, ubicación espalda",gris,deportivo,dragón,espalda,2,0,2,1
+"Camiseta con imagen de guitarra, color azul, estilo vintage, posición pecho",azul,vintage,guitarra,pecho,0,4,3,3
+"Crear camiseta de estilo retro con motivo de sol en color azul, zona esquina",azul,retro,sol,esquina,0,2,6,2
+"Camiseta de color verde, diseño de sol, estilo urbano, zona esquina",verde,urbano,sol,esquina,5,3,6,2
+"Quiero estampado de árbol en zona pecho, color negro, estilo retro",negro,retro,árbol,pecho,3,2,9,3
+"Quiero diseño de lobo en camiseta color blanco, estilo urbano, ubicado en centrado",blanco,urbano,lobo,centrado,1,3,4,0
+"Diseñar camiseta: elemento gráfico árbol, color verde, estilo deportivo, ubicación centrado",verde,deportivo,árbol,centrado,5,0,9,0
+"Diseño para camiseta: montaña en posición pecho, color gris, estilo visual deportivo",gris,deportivo,montaña,pecho,2,0,5,3
+"Necesito una camiseta con gráfico de águila en zona esquina, color azul, estilo vintage",azul,vintage,águila,esquina,0,4,8,2
+"Diseñar camiseta: elemento gráfico guitarra, color verde, estilo minimalista, ubicación esquina",verde,minimalista,guitarra,esquina,5,1,3,2
+"Quiero diseño de dragón en camiseta color azul, estilo deportivo, ubicado en centrado",azul,deportivo,dragón,centrado,0,0,2,0
+"Diseño de camiseta: gráfico de texto, color gris, estilo vintage, posición esquina",gris,vintage,texto,esquina,2,4,7,2
+"Generar camiseta de estilo deportivo, color verde, imagen de lobo en zona centrado",verde,deportivo,lobo,centrado,5,0,4,0
+"Quiero estampado de árbol en zona centrado, color negro, estilo minimalista",negro,minimalista,árbol,centrado,3,1,9,0
+"Diseño para camiseta: águila en posición centrado, color azul, estilo visual deportivo",azul,deportivo,águila,centrado,0,0,8,0
+"Quiero diseño de calavera en camiseta color negro, estilo urbano, ubicado en espalda",negro,urbano,calavera,espalda,3,3,1,1
+"Quiero una camiseta con diseño de guitarra en estilo urbano, color blanco, posición pecho",blanco,urbano,guitarra,pecho,1,3,3,3
+"Necesito una camiseta con gráfico de dragón en zona pecho, color azul, estilo minimalista",azul,minimalista,dragón,pecho,0,1,2,3
+"Necesito una camiseta con gráfico de montaña en zona pecho, color rojo, estilo deportivo",rojo,deportivo,montaña,pecho,4,0,5,3
+"Quiero diseño de dragón en camiseta color gris, estilo retro, ubicado en espalda",gris,retro,dragón,espalda,2,2,2,1
+"Camiseta con imagen de calavera, color gris, estilo deportivo, posición espalda",gris,deportivo,calavera,espalda,2,0,1,1
+"Diseño de camiseta: gráfico de sol, color verde, estilo vintage, posición pecho",verde,vintage,sol,pecho,5,4,6,3
+"Quiero una camiseta con diseño de montaña en estilo urbano, color rojo, posición centrado",rojo,urbano,montaña,centrado,4,3,5,0
+"Quiero una camiseta con diseño de calavera en estilo minimalista, color negro, posición pecho",negro,minimalista,calavera,pecho,3,1,1,3
+"Diseño de camiseta: gráfico de texto, color blanco, estilo vintage, posición pecho",blanco,vintage,texto,pecho,1,4,7,3
+"Quiero una camiseta con diseño de automóvil en estilo urbano, color azul, posición espalda",azul,urbano,automóvil,espalda,0,3,0,1
+"Camiseta color blanco, estilo urbano, con estampado de texto en zona centrado",blanco,urbano,texto,centrado,1,3,7,0
+Camiseta de color negro con motivo retro de montaña en la zona centrado,negro,retro,montaña,centrado,3,2,5,0
+"Quiero una camiseta con diseño de automóvil en estilo minimalista, color blanco, posición espalda",blanco,minimalista,automóvil,espalda,1,1,0,1
+"Quiero estampado de texto en zona esquina, color blanco, estilo retro",blanco,retro,texto,esquina,1,2,7,2
+"Diseño para camiseta: árbol en posición centrado, color gris, estilo visual minimalista",gris,minimalista,árbol,centrado,2,1,9,0
+"Camiseta de color rojo, diseño de sol, estilo retro, zona centrado",rojo,retro,sol,centrado,4,2,6,0
+"Necesito una camiseta con gráfico de dragón en zona espalda, color verde, estilo vintage",verde,vintage,dragón,espalda,5,4,2,1
+"Diseñar camiseta: elemento gráfico dragón, color negro, estilo retro, ubicación esquina",negro,retro,dragón,esquina,3,2,2,2
+"Crear camiseta de estilo urbano con motivo de dragón en color rojo, zona esquina",rojo,urbano,dragón,esquina,4,3,2,2
+"Quiero diseño de árbol en camiseta color blanco, estilo vintage, ubicado en esquina",blanco,vintage,árbol,esquina,1,4,9,2
+"Camiseta con imagen de águila, color negro, estilo urbano, posición centrado",negro,urbano,águila,centrado,3,3,8,0
+"Quiero una camiseta con diseño de árbol en estilo retro, color rojo, posición esquina",rojo,retro,árbol,esquina,4,2,9,2
+"Diseño de camiseta: gráfico de automóvil, color verde, estilo urbano, posición centrado",verde,urbano,automóvil,centrado,5,3,0,0
+Camiseta de color negro con motivo deportivo de montaña en la zona centrado,negro,deportivo,montaña,centrado,3,0,5,0
+"Camiseta con estampado de águila, color principal rojo, estilo visual vintage, zona esquina",rojo,vintage,águila,esquina,4,4,8,2
+"Camiseta color negro, estilo minimalista, con estampado de dragón en zona esquina",negro,minimalista,dragón,esquina,3,1,2,2
+"Camiseta con estampado de guitarra, color principal negro, estilo visual vintage, zona esquina",negro,vintage,guitarra,esquina,3,4,3,2
+"Quiero diseño de texto en camiseta color azul, estilo vintage, ubicado en pecho",azul,vintage,texto,pecho,0,4,7,3
+"Camiseta con imagen de calavera, color rojo, estilo minimalista, posición pecho",rojo,minimalista,calavera,pecho,4,1,1,3
+"Generar camiseta de estilo deportivo, color azul, imagen de árbol en zona centrado",azul,deportivo,árbol,centrado,0,0,9,0
+"Necesito una camiseta con gráfico de sol en zona pecho, color gris, estilo deportivo",gris,deportivo,sol,pecho,2,0,6,3
+"Crear camiseta de estilo vintage con motivo de lobo en color gris, zona pecho",gris,vintage,lobo,pecho,2,4,4,3
+"Quiero diseño de guitarra en camiseta color rojo, estilo vintage, ubicado en centrado",rojo,vintage,guitarra,centrado,4,4,3,0
+"Crear camiseta de estilo minimalista con motivo de árbol en color azul, zona espalda",azul,minimalista,árbol,espalda,0,1,9,1
+"Camiseta color azul, estilo retro, con estampado de águila en zona pecho",azul,retro,águila,pecho,0,2,8,3
+"Camiseta color blanco, estilo urbano, con estampado de lobo en zona espalda",blanco,urbano,lobo,espalda,1,3,4,1
+"Crear camiseta de estilo vintage con motivo de montaña en color azul, zona espalda",azul,vintage,montaña,espalda,0,4,5,1
+"Crear camiseta de estilo deportivo con motivo de automóvil en color blanco, zona pecho",blanco,deportivo,automóvil,pecho,1,0,0,3
+"Camiseta con estampado de automóvil, color principal negro, estilo visual urbano, zona centrado",negro,urbano,automóvil,centrado,3,3,0,0
+"Necesito una camiseta con gráfico de águila en zona centrado, color verde, estilo deportivo",verde,deportivo,águila,centrado,5,0,8,0
+"Camiseta con imagen de montaña, color verde, estilo retro, posición esquina",verde,retro,montaña,esquina,5,2,5,2
+"Diseño de camiseta: gráfico de sol, color gris, estilo minimalista, posición espalda",gris,minimalista,sol,espalda,2,1,6,1
+"Quiero una camiseta con diseño de árbol en estilo urbano, color verde, posición espalda",verde,urbano,árbol,espalda,5,3,9,1
+Camiseta de color blanco con motivo urbano de texto en la zona centrado,blanco,urbano,texto,centrado,1,3,7,0
+"Camiseta con imagen de sol, color gris, estilo retro, posición centrado",gris,retro,sol,centrado,2,2,6,0
+"Diseño para camiseta: lobo en posición centrado, color rojo, estilo visual deportivo",rojo,deportivo,lobo,centrado,4,0,4,0
+"Camiseta de color gris, diseño de montaña, estilo deportivo, zona centrado",gris,deportivo,montaña,centrado,2,0,5,0
+"Diseño para camiseta: sol en posición espalda, color verde, estilo visual vintage",verde,vintage,sol,espalda,5,4,6,1
+"Camiseta color azul, estilo deportivo, con estampado de sol en zona espalda",azul,deportivo,sol,espalda,0,0,6,1
+"Camiseta con imagen de sol, color gris, estilo retro, posición pecho",gris,retro,sol,pecho,2,2,6,3
+"Camiseta color gris, estilo urbano, con estampado de lobo en zona espalda",gris,urbano,lobo,espalda,2,3,4,1
+"Quiero diseño de lobo en camiseta color rojo, estilo urbano, ubicado en esquina",rojo,urbano,lobo,esquina,4,3,4,2
+"Quiero una camiseta con diseño de dragón en estilo deportivo, color negro, posición centrado",negro,deportivo,dragón,centrado,3,0,2,0
+"Camiseta de color gris, diseño de sol, estilo vintage, zona centrado",gris,vintage,sol,centrado,2,4,6,0
+"Quiero diseño de sol en camiseta color gris, estilo deportivo, ubicado en esquina",gris,deportivo,sol,esquina,2,0,6,2
+"Quiero una camiseta con diseño de dragón en estilo minimalista, color blanco, posición esquina",blanco,minimalista,dragón,esquina,1,1,2,2
+"Diseñar camiseta: elemento gráfico sol, color azul, estilo vintage, ubicación pecho",azul,vintage,sol,pecho,0,4,6,3
+"Camiseta con estampado de sol, color principal negro, estilo visual urbano, zona pecho",negro,urbano,sol,pecho,3,3,6,3
+"Quiero una camiseta con diseño de calavera en estilo deportivo, color gris, posición pecho",gris,deportivo,calavera,pecho,2,0,1,3
+Camiseta de color azul con motivo minimalista de calavera en la zona esquina,azul,minimalista,calavera,esquina,0,1,1,2
+"Camiseta color verde, estilo minimalista, con estampado de calavera en zona centrado",verde,minimalista,calavera,centrado,5,1,1,0
+"Quiero una camiseta con diseño de lobo en estilo minimalista, color gris, posición espalda",gris,minimalista,lobo,espalda,2,1,4,1
+"Crear camiseta de estilo minimalista con motivo de lobo en color verde, zona centrado",verde,minimalista,lobo,centrado,5,1,4,0
+"Diseño de camiseta: gráfico de calavera, color negro, estilo minimalista, posición esquina",negro,minimalista,calavera,esquina,3,1,1,2
+"Quiero diseño de montaña en camiseta color verde, estilo urbano, ubicado en pecho",verde,urbano,montaña,pecho,5,3,5,3
+"Diseñar camiseta: elemento gráfico guitarra, color azul, estilo minimalista, ubicación pecho",azul,minimalista,guitarra,pecho,0,1,3,3
+"Diseñar camiseta: elemento gráfico sol, color verde, estilo urbano, ubicación esquina",verde,urbano,sol,esquina,5,3,6,2
+"Diseño de camiseta: gráfico de dragón, color rojo, estilo retro, posición espalda",rojo,retro,dragón,espalda,4,2,2,1
+"Camiseta color negro, estilo minimalista, con estampado de dragón en zona centrado",negro,minimalista,dragón,centrado,3,1,2,0
+"Camiseta de color negro, diseño de guitarra, estilo urbano, zona pecho",negro,urbano,guitarra,pecho,3,3,3,3
+"Crear camiseta de estilo deportivo con motivo de automóvil en color negro, zona pecho",negro,deportivo,automóvil,pecho,3,0,0,3
+"Necesito una camiseta con gráfico de guitarra en zona pecho, color verde, estilo urbano",verde,urbano,guitarra,pecho,5,3,3,3
+"Camiseta con imagen de dragón, color blanco, estilo vintage, posición centrado",blanco,vintage,dragón,centrado,1,4,2,0
+"Quiero estampado de automóvil en zona centrado, color gris, estilo retro",gris,retro,automóvil,centrado,2,2,0,0
+"Camiseta con imagen de montaña, color gris, estilo minimalista, posición centrado",gris,minimalista,montaña,centrado,2,1,5,0
+"Quiero diseño de sol en camiseta color verde, estilo vintage, ubicado en pecho",verde,vintage,sol,pecho,5,4,6,3
+"Generar camiseta de estilo vintage, color azul, imagen de calavera en zona espalda",azul,vintage,calavera,espalda,0,4,1,1
+"Camiseta con estampado de árbol, color principal verde, estilo visual retro, zona esquina",verde,retro,árbol,esquina,5,2,9,2
+"Diseño para camiseta: texto en posición centrado, color azul, estilo visual minimalista",azul,minimalista,texto,centrado,0,1,7,0
+"Camiseta con estampado de dragón, color principal verde, estilo visual urbano, zona espalda",verde,urbano,dragón,espalda,5,3,2,1
+"Camiseta con imagen de sol, color blanco, estilo urbano, posición pecho",blanco,urbano,sol,pecho,1,3,6,3
+"Camiseta con estampado de águila, color principal gris, estilo visual minimalista, zona centrado",gris,minimalista,águila,centrado,2,1,8,0
+"Quiero una camiseta con diseño de dragón en estilo deportivo, color azul, posición espalda",azul,deportivo,dragón,espalda,0,0,2,1
+"Quiero diseño de árbol en camiseta color rojo, estilo retro, ubicado en pecho",rojo,retro,árbol,pecho,4,2,9,3
+Camiseta de color blanco con motivo retro de águila en la zona espalda,blanco,retro,águila,espalda,1,2,8,1
+"Quiero diseño de automóvil en camiseta color rojo, estilo retro, ubicado en pecho",rojo,retro,automóvil,pecho,4,2,0,3
+"Diseñar camiseta: elemento gráfico guitarra, color azul, estilo urbano, ubicación pecho",azul,urbano,guitarra,pecho,0,3,3,3
+"Diseñar camiseta: elemento gráfico montaña, color blanco, estilo deportivo, ubicación centrado",blanco,deportivo,montaña,centrado,1,0,5,0
+"Diseño para camiseta: calavera en posición esquina, color blanco, estilo visual retro",blanco,retro,calavera,esquina,1,2,1,2
+"Diseño para camiseta: dragón en posición espalda, color gris, estilo visual vintage",gris,vintage,dragón,espalda,2,4,2,1
+"Quiero estampado de águila en zona espalda, color gris, estilo deportivo",gris,deportivo,águila,espalda,2,0,8,1
+"Camiseta de color azul, diseño de montaña, estilo vintage, zona espalda",azul,vintage,montaña,espalda,0,4,5,1
+"Camiseta con estampado de árbol, color principal negro, estilo visual urbano, zona centrado",negro,urbano,árbol,centrado,3,3,9,0
+"Generar camiseta de estilo vintage, color gris, imagen de texto en zona esquina",gris,vintage,texto,esquina,2,4,7,2
+"Camiseta de color blanco, diseño de árbol, estilo minimalista, zona centrado",blanco,minimalista,árbol,centrado,1,1,9,0
+"Camiseta con imagen de árbol, color verde, estilo deportivo, posición centrado",verde,deportivo,árbol,centrado,5,0,9,0
+"Camiseta con imagen de águila, color azul, estilo urbano, posición pecho",azul,urbano,águila,pecho,0,3,8,3
+Camiseta de color negro con motivo urbano de montaña en la zona centrado,negro,urbano,montaña,centrado,3,3,5,0
+"Quiero diseño de águila en camiseta color verde, estilo urbano, ubicado en centrado",verde,urbano,águila,centrado,5,3,8,0
+"Camiseta con estampado de dragón, color principal rojo, estilo visual retro, zona pecho",rojo,retro,dragón,pecho,4,2,2,3
+"Crear camiseta de estilo deportivo con motivo de lobo en color azul, zona esquina",azul,deportivo,lobo,esquina,0,0,4,2
+"Crear camiseta de estilo retro con motivo de dragón en color azul, zona centrado",azul,retro,dragón,centrado,0,2,2,0
+Camiseta de color blanco con motivo deportivo de texto en la zona centrado,blanco,deportivo,texto,centrado,1,0,7,0
+Camiseta de color verde con motivo urbano de texto en la zona esquina,verde,urbano,texto,esquina,5,3,7,2
+"Camiseta con estampado de automóvil, color principal gris, estilo visual minimalista, zona espalda",gris,minimalista,automóvil,espalda,2,1,0,1
+Camiseta de color gris con motivo retro de montaña en la zona esquina,gris,retro,montaña,esquina,2,2,5,2
+Camiseta de color azul con motivo deportivo de automóvil en la zona centrado,azul,deportivo,automóvil,centrado,0,0,0,0
+"Camiseta con imagen de calavera, color blanco, estilo minimalista, posición espalda",blanco,minimalista,calavera,espalda,1,1,1,1
+"Quiero estampado de lobo en zona esquina, color gris, estilo vintage",gris,vintage,lobo,esquina,2,4,4,2
+"Crear camiseta de estilo retro con motivo de águila en color blanco, zona pecho",blanco,retro,águila,pecho,1,2,8,3
+"Crear camiseta de estilo deportivo con motivo de dragón en color rojo, zona centrado",rojo,deportivo,dragón,centrado,4,0,2,0
+"Diseñar camiseta: elemento gráfico automóvil, color rojo, estilo retro, ubicación centrado",rojo,retro,automóvil,centrado,4,2,0,0
+"Camiseta de color negro, diseño de sol, estilo retro, zona centrado",negro,retro,sol,centrado,3,2,6,0
+Camiseta de color rojo con motivo retro de calavera en la zona espalda,rojo,retro,calavera,espalda,4,2,1,1
+"Diseñar camiseta: elemento gráfico texto, color blanco, estilo deportivo, ubicación espalda",blanco,deportivo,texto,espalda,1,0,7,1
+"Quiero diseño de águila en camiseta color negro, estilo retro, ubicado en espalda",negro,retro,águila,espalda,3,2,8,1
+"Quiero estampado de lobo en zona espalda, color gris, estilo vintage",gris,vintage,lobo,espalda,2,4,4,1
+Camiseta de color rojo con motivo deportivo de texto en la zona pecho,rojo,deportivo,texto,pecho,4,0,7,3
+"Diseño para camiseta: sol en posición pecho, color blanco, estilo visual urbano",blanco,urbano,sol,pecho,1,3,6,3
+"Diseñar camiseta: elemento gráfico automóvil, color rojo, estilo urbano, ubicación esquina",rojo,urbano,automóvil,esquina,4,3,0,2
+"Necesito una camiseta con gráfico de águila en zona pecho, color azul, estilo minimalista",azul,minimalista,águila,pecho,0,1,8,3
+"Camiseta color blanco, estilo retro, con estampado de texto en zona esquina",blanco,retro,texto,esquina,1,2,7,2
+"Diseño de camiseta: gráfico de calavera, color negro, estilo urbano, posición esquina",negro,urbano,calavera,esquina,3,3,1,2
+"Camiseta con estampado de automóvil, color principal gris, estilo visual deportivo, zona pecho",gris,deportivo,automóvil,pecho,2,0,0,3
+"Crear camiseta de estilo retro con motivo de árbol en color gris, zona centrado",gris,retro,árbol,centrado,2,2,9,0
+"Quiero diseño de montaña en camiseta color verde, estilo deportivo, ubicado en centrado",verde,deportivo,montaña,centrado,5,0,5,0
+Camiseta de color negro con motivo minimalista de guitarra en la zona espalda,negro,minimalista,guitarra,espalda,3,1,3,1
+"Quiero diseño de automóvil en camiseta color azul, estilo deportivo, ubicado en esquina",azul,deportivo,automóvil,esquina,0,0,0,2
+"Quiero diseño de automóvil en camiseta color negro, estilo vintage, ubicado en espalda",negro,vintage,automóvil,espalda,3,4,0,1
+"Crear camiseta de estilo minimalista con motivo de guitarra en color azul, zona esquina",azul,minimalista,guitarra,esquina,0,1,3,2
+"Camiseta color gris, estilo vintage, con estampado de águila en zona esquina",gris,vintage,águila,esquina,2,4,8,2
+"Quiero estampado de sol en zona esquina, color gris, estilo minimalista",gris,minimalista,sol,esquina,2,1,6,2
+Camiseta de color blanco con motivo retro de águila en la zona pecho,blanco,retro,águila,pecho,1,2,8,3
+"Crear camiseta de estilo vintage con motivo de montaña en color blanco, zona pecho",blanco,vintage,montaña,pecho,1,4,5,3
+"Quiero una camiseta con diseño de guitarra en estilo minimalista, color rojo, posición pecho",rojo,minimalista,guitarra,pecho,4,1,3,3
+"Diseño de camiseta: gráfico de lobo, color azul, estilo minimalista, posición pecho",azul,minimalista,lobo,pecho,0,1,4,3
+"Camiseta con estampado de texto, color principal blanco, estilo visual deportivo, zona esquina",blanco,deportivo,texto,esquina,1,0,7,2
+"Generar camiseta de estilo retro, color negro, imagen de árbol en zona pecho",negro,retro,árbol,pecho,3,2,9,3
+Camiseta de color blanco con motivo minimalista de texto en la zona esquina,blanco,minimalista,texto,esquina,1,1,7,2
+Camiseta de color rojo con motivo urbano de automóvil en la zona pecho,rojo,urbano,automóvil,pecho,4,3,0,3
+"Generar camiseta de estilo deportivo, color verde, imagen de árbol en zona pecho",verde,deportivo,árbol,pecho,5,0,9,3
+"Camiseta de color rojo, diseño de automóvil, estilo retro, zona pecho",rojo,retro,automóvil,pecho,4,2,0,3
+"Necesito una camiseta con gráfico de árbol en zona esquina, color rojo, estilo vintage",rojo,vintage,árbol,esquina,4,4,9,2
+"Diseño de camiseta: gráfico de árbol, color blanco, estilo vintage, posición centrado",blanco,vintage,árbol,centrado,1,4,9,0
+"Camiseta de color azul, diseño de lobo, estilo retro, zona espalda",azul,retro,lobo,espalda,0,2,4,1
+"Quiero estampado de árbol en zona esquina, color azul, estilo vintage",azul,vintage,árbol,esquina,0,4,9,2
+"Camiseta con imagen de texto, color verde, estilo minimalista, posición pecho",verde,minimalista,texto,pecho,5,1,7,3
+"Camiseta de color negro, diseño de sol, estilo deportivo, zona centrado",negro,deportivo,sol,centrado,3,0,6,0
+"Camiseta con estampado de águila, color principal negro, estilo visual minimalista, zona espalda",negro,minimalista,águila,espalda,3,1,8,1
+"Diseñar camiseta: elemento gráfico guitarra, color blanco, estilo vintage, ubicación centrado",blanco,vintage,guitarra,centrado,1,4,3,0
+"Quiero estampado de automóvil en zona pecho, color verde, estilo vintage",verde,vintage,automóvil,pecho,5,4,0,3
+"Quiero diseño de águila en camiseta color blanco, estilo urbano, ubicado en centrado",blanco,urbano,águila,centrado,1,3,8,0
+"Diseño de camiseta: gráfico de automóvil, color negro, estilo retro, posición pecho",negro,retro,automóvil,pecho,3,2,0,3
+Camiseta de color azul con motivo vintage de dragón en la zona pecho,azul,vintage,dragón,pecho,0,4,2,3
+"Camiseta de color verde, diseño de calavera, estilo urbano, zona pecho",verde,urbano,calavera,pecho,5,3,1,3
+"Camiseta de color rojo, diseño de guitarra, estilo urbano, zona espalda",rojo,urbano,guitarra,espalda,4,3,3,1
+"Diseño de camiseta: gráfico de calavera, color rojo, estilo minimalista, posición centrado",rojo,minimalista,calavera,centrado,4,1,1,0
+"Crear camiseta de estilo retro con motivo de águila en color rojo, zona centrado",rojo,retro,águila,centrado,4,2,8,0
+"Diseño de camiseta: gráfico de texto, color rojo, estilo minimalista, posición espalda",rojo,minimalista,texto,espalda,4,1,7,1
+"Camiseta con estampado de lobo, color principal azul, estilo visual deportivo, zona centrado",azul,deportivo,lobo,centrado,0,0,4,0
+"Camiseta color verde, estilo deportivo, con estampado de calavera en zona centrado",verde,deportivo,calavera,centrado,5,0,1,0
+"Quiero diseño de águila en camiseta color rojo, estilo urbano, ubicado en espalda",rojo,urbano,águila,espalda,4,3,8,1
+"Camiseta de color azul, diseño de dragón, estilo minimalista, zona esquina",azul,minimalista,dragón,esquina,0,1,2,2
+"Quiero diseño de texto en camiseta color negro, estilo urbano, ubicado en espalda",negro,urbano,texto,espalda,3,3,7,1
+"Camiseta color verde, estilo vintage, con estampado de dragón en zona espalda",verde,vintage,dragón,espalda,5,4,2,1
+Camiseta de color verde con motivo retro de calavera en la zona centrado,verde,retro,calavera,centrado,5,2,1,0
+Camiseta de color verde con motivo deportivo de calavera en la zona espalda,verde,deportivo,calavera,espalda,5,0,1,1
+"Camiseta con estampado de automóvil, color principal azul, estilo visual deportivo, zona esquina",azul,deportivo,automóvil,esquina,0,0,0,2
+"Camiseta con estampado de águila, color principal negro, estilo visual urbano, zona centrado",negro,urbano,águila,centrado,3,3,8,0
+"Quiero diseño de lobo en camiseta color rojo, estilo vintage, ubicado en esquina",rojo,vintage,lobo,esquina,4,4,4,2
+"Quiero estampado de automóvil en zona esquina, color negro, estilo retro",negro,retro,automóvil,esquina,3,2,0,2
+"Camiseta color verde, estilo retro, con estampado de automóvil en zona espalda",verde,retro,automóvil,espalda,5,2,0,1
+Camiseta de color negro con motivo urbano de montaña en la zona espalda,negro,urbano,montaña,espalda,3,3,5,1
+"Quiero estampado de guitarra en zona esquina, color verde, estilo minimalista",verde,minimalista,guitarra,esquina,5,1,3,2
+"Generar camiseta de estilo vintage, color gris, imagen de automóvil en zona esquina",gris,vintage,automóvil,esquina,2,4,0,2
+"Diseño para camiseta: árbol en posición centrado, color rojo, estilo visual urbano",rojo,urbano,árbol,centrado,4,3,9,0
+"Quiero una camiseta con diseño de calavera en estilo deportivo, color blanco, posición espalda",blanco,deportivo,calavera,espalda,1,0,1,1
+"Quiero diseño de lobo en camiseta color verde, estilo deportivo, ubicado en esquina",verde,deportivo,lobo,esquina,5,0,4,2
