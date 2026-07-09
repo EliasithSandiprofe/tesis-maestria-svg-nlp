@@ -282,3 +282,188 @@ Esta evidencia muestra la ejecución exitosa del pipeline de generación del dat
 ### Conclusión de la sesión
 
 La Sesión 04 se considera completada exitosamente. El proyecto cuenta ahora con un dataset sintético reproducible, validado y listo para ser utilizado en la siguiente etapa del Sprint 1: la preparación de datos para el entrenamiento del modelo DistilBERT.
+
+
+
+Sesión 05 – Desarrollo, entrenamiento y evaluación del modelo MultiTask DistilBERT
+
+Fecha: 08/07/2026
+Estado: ✅ Completada
+
+Objetivo
+
+Implementar el flujo completo de entrenamiento y evaluación del modelo de Inteligencia Artificial del proyecto, incluyendo el análisis exploratorio de datos, el preprocesamiento del dataset, la construcción de la arquitectura MultiTask DistilBERT, el entrenamiento supervisado utilizando GPU y la evaluación final sobre un conjunto de prueba independiente.
+
+Actividades realizadas
+1. Análisis Exploratorio de Datos (EDA)
+
+Se desarrolló un módulo completo de Análisis Exploratorio de Datos (EDA) sobre el dataset sintético generado en la sesión anterior.
+
+El análisis incluyó:
+
+Verificación de valores nulos.
+Identificación de registros duplicados.
+Distribución de clases por atributo.
+Estadísticas descriptivas de los prompts.
+Análisis de longitud de texto.
+Generación automática de reportes.
+Generación automática de gráficos estadísticos.
+
+Como resultado se obtuvo un diagnóstico completo del dataset antes del entrenamiento del modelo.
+
+Resultado obtenido
+
+2 000 registros analizados.
+80 registros duplicados detectados.
+Dataset balanceado entre clases.
+Dataset validado para iniciar el entrenamiento.
+2. Preprocesamiento del dataset
+
+Se implementó un pipeline completo de preparación de datos para entrenamiento supervisado.
+
+Las actividades realizadas fueron:
+
+Limpieza del dataset.
+Eliminación de registros duplicados.
+Codificación de etiquetas mediante LabelEncoder.
+División del dataset utilizando la estrategia:
+70 % entrenamiento.
+15 % validación.
+15 % prueba.
+Tokenización mediante DistilBertTokenizerFast.
+Construcción del Dataset de PyTorch.
+Construcción de los DataLoader para entrenamiento y validación.
+
+Resultado obtenido
+
+El conjunto de datos quedó dividido de la siguiente manera:
+
+Conjunto	Registros
+Train	1 344
+Validation	288
+Test	288
+3. Construcción del modelo MultiTask DistilBERT
+
+Se implementó la arquitectura del modelo de Inteligencia Artificial basada en DistilBERT.
+
+La arquitectura desarrollada utiliza un encoder compartido y cuatro cabezas independientes de clasificación para predecir simultáneamente los atributos:
+
+Color.
+Estilo.
+Elemento gráfico.
+Posición del diseño.
+
+Posteriormente se realizó la validación del Forward Pass, verificando correctamente:
+
+carga del modelo;
+carga del tokenizer;
+construcción del dataset;
+propagación hacia adelante;
+dimensiones de entrada y salida;
+cálculo de la función de pérdida para cada tarea.
+
+Resultado obtenido
+
+La arquitectura quedó validada correctamente y lista para iniciar el entrenamiento supervisado.
+
+4. Entrenamiento del modelo
+
+Debido a los requerimientos computacionales del modelo DistilBERT, el entrenamiento se realizó utilizando Google Colab con aceleración mediante GPU Tesla T4.
+
+Se configuró el proceso de entrenamiento utilizando:
+
+DistilBERT Base.
+Batch Size = 16.
+Learning Rate = 2×10⁻⁵.
+Weight Decay = 0.01.
+Scheduler lineal con warmup.
+Gradient Clipping.
+Early Stopping.
+Cinco épocas de entrenamiento.
+
+Durante el entrenamiento se generaron automáticamente los siguientes artefactos:
+
+best_model.pt
+last_model.pt
+training_history.csv
+training_config.json
+training_summary.md
+
+Resultado obtenido
+
+El modelo convergió correctamente durante las cinco épocas planificadas, obteniendo una reducción progresiva de la función de pérdida y una mejora constante en las métricas de validación.
+
+5. Evaluación del modelo
+
+Finalizado el entrenamiento se ejecutó la evaluación utilizando exclusivamente el conjunto Test, independiente del entrenamiento y de la validación.
+
+Durante esta fase se calcularon automáticamente las métricas:
+
+Accuracy.
+Precision.
+Recall.
+F1 Score.
+Matrices de confusión.
+Reportes de clasificación por clase.
+
+Asimismo, se generaron automáticamente los reportes de evaluación y las matrices de confusión para cada una de las cuatro tareas de clasificación.
+
+Resultado obtenido
+
+El modelo alcanzó un desempeño del 100 % en Accuracy y F1 Score sobre el dataset sintético utilizado durante el MVP.
+
+Se documentó que este comportamiento es consistente con la naturaleza completamente sintética y controlada del conjunto de datos, por lo que no representa necesariamente el desempeño esperado sobre datos reales.
+
+6. Generación automática de figuras para la documentación
+
+Con el propósito de documentar el desarrollo del proyecto y reutilizar los resultados en la memoria de la tesis, se desarrolló un módulo adicional para generar automáticamente figuras de calidad académica.
+
+Entre las figuras generadas se incluyen:
+
+Arquitectura del modelo MultiTask DistilBERT.
+Curva de pérdida del entrenamiento.
+Curva de Accuracy durante la validación.
+Matriz de confusión para la clasificación de Color.
+Matriz de confusión para la clasificación de Estilo.
+Matriz de confusión para la clasificación de Elemento.
+Matriz de confusión para la clasificación de Posición.
+
+Estas figuras serán utilizadas posteriormente como apoyo visual en la Entrega 3 y en la memoria final del Trabajo Fin de Máster.
+
+Resultados obtenidos
+
+Al finalizar esta sesión el proyecto dispone de un pipeline completo de Inteligencia Artificial capaz de:
+
+Analizar automáticamente el dataset.
+Preparar los datos para entrenamiento.
+Construir el modelo MultiTask DistilBERT.
+Entrenar el modelo utilizando GPU.
+Evaluar el desempeño mediante métricas de clasificación.
+Generar reportes automáticos.
+Generar figuras técnicas para la documentación.
+
+El módulo NLP alcanza así un estado funcional correspondiente al Producto Mínimo Viable (MVP) definido para la Entrega 3.
+
+Evidencias generadas
+
+Durante esta sesión se generaron las siguientes evidencias y figuras:
+
+docs/
+│
+├── capturas/
+│   ├── EV-001-configuracion-entorno-dependencias-base.png
+│   ├── EV-002-instalacion-spacy.png
+│   ├── EV-003_nlp_primer_prompt.png
+│   ├── EV-004_dataset_sintetico_generado.png
+│
+└── figuras/
+    ├── Figura_01_Arquitectura_MultiTaskDistilBERT.png
+    ├── Figura_02_Curva_Loss_Entrenamiento.png
+    ├── Figura_03_Curva_Accuracy_Validacion.png
+    ├── Figura_04_Matriz_Confusion_Color.png
+    ├── Figura_05_Matriz_Confusion_Estilo.png
+    ├── Figura_06_Matriz_Confusion_Elemento.png
+    └── Figura_07_Matriz_Confusion_Posicion.png
+Conclusión de la sesión
+
+La Sesión 05 se considera completada exitosamente. Con esta fase se finaliza el desarrollo del MVP del módulo de Inteligencia Artificial, disponiendo de un modelo MultiTask DistilBERT completamente funcional, entrenado, evaluado y documentado. Los artefactos generados constituyen la base para la integración con el motor SVG y para la elaboración de la Entrega 3 y del Trabajo Fin de Máster.
