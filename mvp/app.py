@@ -1,14 +1,14 @@
 import os
 import sys
 
-# 1. 🛠️ TRUCOS DE ENTORNO (Antes de los imports pesados)
+# 1. 🛠️ (Antes de los imports pesados)
 os.environ["NUMPY_EXPERIMENTAL_ARRAY_FUNCTION"] = "0"
 os.environ["HF_HUB_DISABLE_TELEMETRY"] = "1"
 os.environ["TRANSFORMERS_OFFLINE"] = "0"
 
 from flask import Flask, request, jsonify, render_template
 
-# 🔌 IMPORTAMOS TU GENERADOR DE SVG
+# 🔌 IMPORTAMOS GENERADOR DE SVG
 # Esto conecta directamente el archivo svg_generator.py con Flask
 try:
     from svg_generator import generate_and_save_svg
