@@ -1,85 +1,87 @@
 import os
-from flask import Flask, render_template, request, jsonify, send_from_directory, abort
+from flask import Flask, request, jsonify, render_template
+from ultralytics import YOLO
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='template')
 
-# Configuración de rutas para archivos estáticos/mocks
-MOCKS_DIR = os.path.join(app.root_path, 'static', 'mocks')
-os.makedirs(MOCKS_DIR, exist_ok=True)
+# 1. Ruta absoluta automática hacia tu modelo de 800 MB
+MODEL_PATH = os.path.join(os.path.dirname(__file__), 'best_model.pt')
 
-# Crear un SVG de prueba en la carpeta de mocks si no existe
-SVG_MOCK_PATH = os.path.join(MOCKS_DIR, 'camiseta.svg')
-if not os.path.exists(SVG_MOCK_PATH):
-    with open(SVG_MOCK_PATH, 'w', encoding='utf-8') as f:
-        f.write('''<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="300" height="300">
-            <rect width="100" height="100" fill="#23272A"/>
-            <circle cx="50" cy="45" r="25" fill="#7289DA"/>
-            <text x="50" y="85" font-family="Arial" font-size="8" fill="white" text-anchor="middle">Mock: Samurai Dragon</text>
-        </svg>''')
+print("Cargando modelo YOLO en memoria (esto puede tardar unos segundos)...")
+try:
+    # Se carga una sola vez al encender el servidor para no saturar la RAM
+    model = YOLO(MODEL_PATH)
+    print("¡Éxito! El modelo best_model.pt se cargó correctamente.")
+except Exception as e:
+    print(f"❌ Error crítico al cargar el archivo del modelo: {e}")
+    model = None
 
 
-# 1. Navegación / Ruta Principal
+# 2. Ruta para renderizar tu interfaz de usuario (Frontend)
 @app.route('/')
 def index():
     return render_template('index.html')
 
 
-# 2. API - Procesamiento de Texto (Simulado)
+# 3. Endpoint API que procesará el Prompt e interactuará con el modelo
 @app.route('/api/generate', methods=['POST'])
-def generate_svg():
+def generate_api():
+    data = request.get_json()
+    
+    # Validaciones básicas de seguridad
+    if not data or 'prompt' not in data or not data['prompt'].strip():
+        return jsonify({
+            "status": "error",
+            "error": "El prompt no puede estar vacío."
+        }), 400
+
+    user_prompt = data['prompt'].strip()
+
+    if model is None:
+        return jsonify({
+            "status": "error",
+            "error": "El modelo de IA no está disponible o no se cargó correctamente en el servidor."
+        }), 500
+
     try:
-        data = request.get_json() or {}
-        prompt = data.get('prompt', '').strip()
-
-        if not prompt:
-            return jsonify({"error": "El prompt no puede estar vacío"}), 400
-
-        # ---- SECCIÓN DE MOCKS (Simulación de NLP y SVG Engine) ----
-        # Aquí es donde el NLP extraerá atributos en el futuro
-        atributos_simulados = {
-            "figura": "dragón",
-            "texto": "Samurai",
-            "prompt_original": prompt
-        }
+        # 🚀 INFERENCIA REAL CON TU MODELO
+        # Nota: YOLO por defecto procesa imágenes/video. Si tu modelo fue entrenado 
+        # para otra tarea, asegúrate de pasarle el tipo de dato que espera.
+        results = model(user_prompt)
         
-        # Nombre del archivo que se "generó"
-        archivo_simulado = "camiseta.svg"
-        # -----------------------------------------------------------
+        # Variables para estructurar lo que tu modelo detecte
+        figura_detectada = "No identificada"
+        
+        # Procesamos los resultados del objeto YOLO
+        for result in results:
+            if hasattr(result, 'boxes') and len(result.boxes) > 0:
+                # Extraemos el ID de la primera clase detectada por la red
+                clase_id = int(result.boxes[0].cls[0])
+                # Mapeamos el ID al nombre real configurado en tu entrenamiento
+                figura_detectada = model.names[clase_id]
+
+        # 🤝 AQUÍ SE CONECTARÁ CON EL MOTOR DE IVÁN POSTERIORMENTE
+        # Por ahora dejamos un nombre de archivo estándar de salida
+        nombre_archivo_svg = "resultado_tesis.svg"
 
         return jsonify({
             "status": "success",
-            "message": "SVG generado exitosamente (Mock)",
-            "atributos": atributos_simulados,
-            "archivo": archivo_simulado
+            "message": "Inferencia procesada con éxito por YOLO",
+            "atributos": {
+                "figura": figura_detectada,
+                "prompt_original": user_prompt
+            },
+            "archivo": nombre_archivo_svg
         }), 200
 
     except Exception as e:
-        # Manejo de errores interno
-        return jsonify({"error": f"Error interno del servidor: {str(e)}"}), 500
+        return jsonify({
+            "status": "error",
+            "error": f"Falla durante la inferencia del modelo: {str(e)}"
+        }), 500
 
 
-# 3. Descarga del archivo generado
-@app.route('/download/<filename>')
-def download_file(filename):
-    # Validación básica de seguridad para evitar Path Traversal
-    if filename != "camiseta.svg":
-        abort(404, description="Archivo no encontrado")
-        
-    try:
-        return send_from_directory(MOCKS_DIR, filename, as_attachment=True)
-    except FileNotFoundError:
-        abort(404, description="El archivo solicitado no existe en el servidor")
-
-
-# 4. Manejadores de Errores Globales (HTML)
-@app.errorhandler(404)
-def page_not_found(e):
-    return render_template('index.html', error=e.description), 404
-
-@app.errorhandler(500)
-def internal_server_error(e):
-    return render_template('index.html', error="Ocurrió un error inesperado en el servidor."), 500
-
-
+# 4. Arranque del servidor local
 if __name__ == '__main__':
+    # Usamos el puerto 5000 estándar de Flask
     app.run(debug=True, port=5000)
