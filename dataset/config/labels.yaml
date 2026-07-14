@@ -1,0 +1,35 @@
+# labels.yaml
+# Clases aprobadas para el dataset sintético de prompts de camisetas.
+
+color:
+  - negro
+  - blanco
+  - rojo
+  - azul
+  - verde
+  - gris
+
+estilo:
+  - minimalista
+  - vintage
+  - urbano
+  - deportivo
+  - retro
+
+elemento:
+  - montaña
+  - guitarra
+  - calavera
+  - lobo
+  - águila
+  - sol
+  - árbol
+  - automóvil
+  - dragón
+  - texto
+
+posicion:
+  - centrado
+  - pecho
+  - esquina
+  - espalda

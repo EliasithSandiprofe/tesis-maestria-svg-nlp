@@ -1,0 +1,308 @@
+{
+  "generated": "2026-07-08 22:47:37",
+  "checkpoint": "/content/tesis-maestria-svg-nlp/modelos/checkpoints/best_model.pt",
+  "test_dataset": "/content/tesis-maestria-svg-nlp/dataset/processed/dataset_test.csv",
+  "global": {
+    "mean_accuracy": 1.0,
+    "mean_f1_macro": 1.0,
+    "n_test_samples": 288
+  },
+  "per_task": {
+    "color": {
+      "n_classes": 6,
+      "class_names": [
+        "azul",
+        "blanco",
+        "gris",
+        "negro",
+        "rojo",
+        "verde"
+      ],
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          54,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          48,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          44,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          45,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          47,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          50
+        ]
+      ]
+    },
+    "estilo": {
+      "n_classes": 5,
+      "class_names": [
+        "deportivo",
+        "minimalista",
+        "retro",
+        "urbano",
+        "vintage"
+      ],
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          57,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          55,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          58,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          60,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          58
+        ]
+      ]
+    },
+    "elemento": {
+      "n_classes": 10,
+      "class_names": [
+        "automóvil",
+        "calavera",
+        "dragón",
+        "guitarra",
+        "lobo",
+        "montaña",
+        "sol",
+        "texto",
+        "águila",
+        "árbol"
+      ],
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          29,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          29,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          29,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          30,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          29,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          29,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          29,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          30,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          28
+        ]
+      ]
+    },
+    "posicion": {
+      "n_classes": 4,
+      "class_names": [
+        "centrado",
+        "espalda",
+        "esquina",
+        "pecho"
+      ],
+      "accuracy": 1.0,
+      "precision_macro": 1.0,
+      "recall_macro": 1.0,
+      "f1_macro": 1.0,
+      "confusion_matrix": [
+        [
+          85,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          66,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          63,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          74
+        ]
+      ]
+    }
+  }
+}
