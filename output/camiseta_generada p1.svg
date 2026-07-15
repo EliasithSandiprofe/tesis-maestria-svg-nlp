@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="500" height="500">
+    <style>
+        .texto-diseno {
+            font-family: 'Impact', 'Arial Black', sans-serif;
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-anchor: middle;
+            fill: #FFFFFF;
+        }
+        .estilo-vintage {
+            filter: sepia(0.4) contrast(0.9);
+            opacity: 0.85;
+        }
+    </style>
+
+    <g class="estilo-vintage">
+        <path d="M 150 100 
+                 L 200 60 
+                 L 250 80 
+                 L 300 60 
+                 L 350 100 
+                 L 390 150 
+                 L 340 190 
+                 L 320 170 
+                 L 320 420 
+                 L 180 420 
+                 L 180 170 
+                 L 160 190 
+                 Z" 
+              fill="rojo" 
+              stroke="#2D3142" 
+              stroke-width="6" 
+              stroke-linejoin="round" />
+
+        <path d="M230 180 L230 300 M225 300 A15 15 0 1 0 255 300 A15 15 0 1 0 225 300 M240 180 L240 220" stroke="rojo" stroke-width="4" fill="none" /><ellipse cx="240" cy="300" rx="18" ry="25" fill="rojo" /><rect x="237" y="160" width="6" height="60" fill="#8B5A2B" /><path d="M234 150 L246 150 L243 160 L237 160 Z" fill="#D2B48C" />
+
+        <text x="250" y="360" class="texto-diseno"></text>
+    </g>
+</svg>
