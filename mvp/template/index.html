@@ -3,132 +3,148 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MVP - Generador SVG NLP</title>
-    <!-- Tailwind CSS para diseño rápido y moderno -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>MVP - Tesis NLP to SVG</title>
+    <!-- Tailwind CSS para diseño moderno -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-900 text-gray-100 font-sans min-h-screen flex flex-col justify-between"> 
+<body class="bg-[#0b1329] text-slate-100 min-h-screen flex flex-col justify-between font-sans">
 
-    <!-- Navegación -->
-    <nav class="bg-gray-800 border-b border-gray-700 p-4 shadow-md">
-        <div class="container mx-auto flex justify-between items-center">
-            <h1 class="text-xl font-bold tracking-wider text-indigo-400">🎨 SVG-NLP MVP</h1>
-            <span class="text-xs bg-indigo-900 text-indigo-300 px-2.5 py-1 rounded-full font-semibold">Semana 1: Frontend & Mocks</span>
-        </div>
-    </nav>
+    <!-- Encabezado -->
+    <header class="text-center py-8">
+        <h1 class="text-3xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-indigo-500">
+            Generador de Diseños Textiles Inteligente
+        </h1>
+        <p class="text-sm text-slate-400 mt-1">Sistema basado en NLP y aprendizaje automático para generar diseños SVG de camisetas desde prompts </p>
+    </header>
 
     <!-- Contenido Principal -->
-    <main class="container mx-auto p-6 flex-grow grid grid-cols-1 md:grid-cols-2 gap-8 items-start my-auto">
+    <main class="max-w-6xl mx-auto px-4 grid grid-cols-1 md:grid-cols-2 gap-8 items-start w-full flex-grow">
         
-        <!-- Columna Izquierda: Formulario e Inputs -->
-        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700">
-            <h2 class="text-lg font-semibold mb-4 text-gray-200">Ingresa tu instrucción (Prompt)</h2>
-            
-            <form id="generatorForm" class="space-y-4">
-                <div>
-                    <label for="prompt" class="block text-sm font-medium text-gray-400 mb-2">¿Qué deseas diseñar?</label>
-                    <textarea id="prompt" rows="4" 
-                        class="w-full p-3 bg-gray-950 border border-gray-700 rounded-lg focus:ring-2 focus:ring-indigo-500 focus:outline-none text-white placeholder-gray-500"
-                        placeholder="Ejemplo: Una camiseta con un dragón estilo Samurai..."></textarea>
+        <!-- Panel Izquierdo: Inputs y Métricas -->
+        <section class="bg-[#131c35] p-6 rounded-2xl border border-slate-800 shadow-xl space-y-6">
+            <div>
+                <label for="prompt-input" class="block text-lg font-semibold mb-2">Introduce tu prompt</label>
+                <textarea id="prompt-input" rows="4" 
+                    class="w-full bg-[#0b1329] border border-slate-700 rounded-xl p-4 text-slate-200 focus:outline-none focus:ring-2 focus:ring-indigo-500 transition"
+                    placeholder="Escribe tu idea de diseño aquí..."></textarea>
+            </div>
+
+            <button id="btn-procesar" onclick="procesarInferencia()"
+                class="w-full bg-gradient-to-r from-indigo-600 to-blue-600 hover:from-indigo-500 hover:to-blue-500 text-white font-bold py-4 rounded-xl transition shadow-lg transform active:scale-[0.98]">
+                Procesar Inferencia IA PyTorch
+            </button>
+
+            <!-- Atributos Predichos -->
+            <div class="border-t border-slate-800 pt-6">
+                <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider mb-4">Atributos Predichos por el Modelo</h3>
+                <div class="grid grid-cols-2 gap-4">
+                    <div class="bg-[#0b1329] p-3 rounded-xl border border-slate-800">
+                        <span class="text-xs text-slate-400 block">Figura (Elemento):</span>
+                        <strong id="attr-figura" class="text-indigo-300 font-mono">-</strong>
+                    </div>
+                    <div class="bg-[#0b1329] p-3 rounded-xl border border-slate-800">
+                        <span class="text-xs text-slate-400 block">Estilo (Texto):</span>
+                        <strong id="attr-estilo" class="text-indigo-300 font-mono">-</strong>
+                    </div>
+                    <div class="bg-[#0b1329] p-3 rounded-xl border border-slate-800">
+                        <span class="text-xs text-slate-400 block">Color Predominante:</span>
+                        <strong id="attr-color" class="text-indigo-300 font-mono">-</strong>
+                    </div>
+                    <div class="bg-[#0b1329] p-3 rounded-xl border border-slate-800">
+                        <span class="text-xs text-slate-400 block">Posición:</span>
+                        <strong id="attr-posicion" class="text-indigo-300 font-mono">-</strong>
+                    </div>
                 </div>
-                
-                <!-- Botón de Envío -->
-                <button type="submit" id="btnSubmit"
-                    class="w-full bg-indigo-600 hover:bg-indigo-500 text-white font-medium py-2.5 px-4 rounded-lg transition duration-200 shadow-md cursor-pointer">
-                    Procesar y Generar SVG
-                </button>
-            </form>
-
-            <!-- Alertas de Error / Éxito -->
-            <div id="errorAlert" class="hidden mt-4 p-3 bg-red-900/50 border border-red-700 text-red-200 rounded-lg text-sm"></div>
-
-            <!-- Visualización de Atributos Extraídos (Mock) -->
-            <div id="attributesContainer" class="hidden mt-6 p-4 bg-gray-950 border border-gray-700 rounded-lg">
-                <h3 class="text-xs font-bold uppercase tracking-wider text-indigo-400 mb-2">Atributos Extraídos (Mock NLP)</h3>
-                <ul id="attributesList" class="space-y-1 text-sm text-gray-300"></ul>
             </div>
-        </div>
+        </section>
 
-        <!-- Columna Derecha: Visualizador del SVG resultante -->
-        <div class="bg-gray-800 p-6 rounded-xl shadow-lg border border-gray-700 flex flex-col items-center justify-between h-full min-h-[400px]">
-            <h2 class="text-lg font-semibold mb-4 text-gray-200 self-start">Visualización del SVG</h2>
+        <!-- Panel Derecho: Lienzo Visual -->
+        <section class="bg-[#131c35] p-6 rounded-2xl border border-slate-800 shadow-xl flex flex-col items-center space-y-6">
+            <h3 class="text-xs font-bold text-slate-500 uppercase tracking-wider self-start">Lienzo de Resultado Visual (SVG)</h3>
             
-            <!-- Contenedor del renderizado -->
-            <div id="svgContainer" class="w-full flex-grow flex items-center justify-center bg-gray-950 rounded-lg border border-dashed border-gray-700 p-4 min-h-[250px]">
-                <p id="placeholderText" class="text-gray-500 text-sm text-center">Introduce un prompt para previsualizar el diseño gráfico.</p>
+            <!-- Contenedor del SVG -->
+            <div class="w-full aspect-square max-w-[400px] bg-[#0b1329] rounded-2xl border border-slate-800 p-4 flex items-center justify-center relative overflow-hidden">
+                <!-- Imagen del SVG apuntando al directorio estático de Flask -->
+                <img id="lienzo-svg" 
+                     src="{{ url_for('static', filename='resultado_tesis.svg') }}" 
+                     alt="Esperando prompt..." 
+                     class="w-full h-full object-contain transition-all duration-300" />
+                
+                <!-- Overlay de carga -->
+                <div id="loader" class="hidden absolute inset-0 bg-[#0b1329]/90 flex flex-col items-center justify-center space-y-3">
+                    <div class="animate-spin rounded-full h-10 w-10 border-b-2 border-indigo-500"></div>
+                    <p class="text-xs text-indigo-400 font-mono">Ejecutando inferencia PyTorch...</p>
+                </div>
             </div>
 
-            <!-- Botón de Descarga -->
-            <div class="w-full mt-4">
-                <a id="btnDownload" href="#" 
-                    class="hidden w-full text-center bg-emerald-600 hover:bg-emerald-500 text-white font-medium py-2.5 px-4 rounded-lg transition duration-200 shadow-md">
-                    📥 Descargar Archivo .svg
-                </a>
-            </div>
-        </div>
+            <!-- Botón de Descarga usando tu ruta dedicada Flask download_file -->
+            <a id="btn-descargar" href="/download/resultado_tesis.svg" download="resultado_tesis.svg"
+               class="w-full bg-[#059669] hover:bg-[#10b981] text-white text-center font-semibold py-3 rounded-xl transition flex items-center justify-center space-x-2">
+                <span>📥 Descargar Archivo SVG Final</span>
+            </a>
+        </section>
     </main>
 
-    <!-- Footer -->
-    <footer class="bg-gray-900 text-center py-4 text-xs text-gray-500 border-t border-gray-800">
-        Eliasit, Ivan y Emmanuel &copy; 2026 - Desarrollo de MVP Desacoplado
+    <!-- Pie de página -->
+    <footer class="text-center py-6 border-t border-slate-900 text-xs text-slate-500">
+        Sandi Esquivel Eliasith Adriel, López
+Hernández Iván Patricio, Barrón Pérez Emmanuel Alejandro
+  © 2026
     </footer>
 
-    <!-- Lógica JavaScript  -->
+    <!-- Lógica de Control JavaScript conectada con tu backend exacto -->
     <script>
-        document.getElementById('generatorForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
-            
-            const promptInput = document.getElementById('prompt').value;
-            const btnSubmit = document.getElementById('btnSubmit');
-            const errorAlert = document.getElementById('errorAlert');
-            const attributesContainer = document.getElementById('attributesContainer');
-            const attributesList = document.getElementById('attributesList');
-            const svgContainer = document.getElementById('svgContainer');
-            const btnDownload = document.getElementById('btnDownload');
+        async function procesarInferencia() {
+            const prompt = document.getElementById('prompt-input').value;
+            const loader = document.getElementById('loader');
+            const lienzo = document.getElementById('lienzo-svg');
+            const btnProcesar = document.getElementById('btn-procesar');
 
-            // Limpiar estados previos de la interfaz
-            errorAlert.classList.add('hidden');
-            btnSubmit.disabled = true;
-            btnSubmit.innerText = 'Procesando...';
+            // 1. Activar loader y desactivar interacciones
+            loader.classList.remove('hidden');
+            btnProcesar.disabled = true;
 
             try {
+                // 2. Apuntar a tu ruta real /api/generate
                 const response = await fetch('/api/generate', {
                     method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ prompt: promptInput })
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({ prompt: prompt })
                 });
 
-                // Única conversión limpia usando estándar JavaScript .json()
-                const result = await response.json();
+                if (!response.ok) throw new Error("Error en el servidor");
+                const data = await response.json();
 
-                if (!response.ok) {
-                    throw new Error(result.error || 'Error al procesar la solicitud');
+                if (data.status === "success") {
+                    // 3. Pintar Atributos en las tarjetas del HTML
+                    document.getElementById('attr-figura').innerText = data.figura;
+                    document.getElementById('attr-estilo').innerText = data.texto;
+                    document.getElementById('attr-color').innerText = data.color;
+                    document.getElementById('attr-posicion').innerText = data.posicion;
+
+                    // 4. ROMPER CACHÉ DEL SVG EN EL LIENZO
+                    // Se suma el timestamp de milisegundos actual (?t=...)
+                    const timestamp = new Date().getTime();
+                    const nuevaRuta = "{{ url_for('static', filename='resultado_tesis.svg') }}?t=" + timestamp;
+                    
+                    lienzo.src = nuevaRuta;
+                    
+                    // Actualizar también la ruta del botón de descarga
+                    document.getElementById('btn-descargar').href = "/download/resultado_tesis.svg?t=" + timestamp;
+                } else {
+                    alert("Error devuelto por la API: " + data.error);
                 }
-
-                // 1. Mostrar Atributos Extraídos (Mock)
-                attributesList.innerHTML = `
-                    <li><strong>Figura:</strong> ${result.atributos.figura}</li>
-                    <li><strong>Texto:</strong> ${result.atributos.texto}</li>
-                `;
-                attributesContainer.classList.remove('hidden');
-
-                // 2. Renderizar SVG en Pantalla evitando el uso de la caché vieja del navegador
-                svgContainer.innerHTML = `<img src="/static/mocks/${result.archivo}?t=${new Date().getTime()}" alt="SVG Generado" class="max-h-[250px] object-contain">`;
-
-                // 3. Activar el Botón de Descarga
-                btnDownload.href = `/download/${result.archivo}`;
-                btnDownload.classList.remove('hidden');
-                btnDownload.classList.add('block');
-
-            } catch (err) {
-                // Captura de errores limpia
-                errorAlert.innerText = err.message;
-                errorAlert.classList.remove('hidden');
+            } catch (error) {
+                console.error("Error procesando la inferencia:", error);
+                alert("Hubo un error al conectar con el servidor de PyTorch.");
             } finally {
-                btnSubmit.disabled = false;
-                btnSubmit.innerText = 'Procesar y Generar SVG';
+                // 5. Quitar loader
+                loader.classList.add('hidden');
+                btnProcesar.disabled = false;
             }
-        });
+        }
     </script>
 </body>
 </html>
